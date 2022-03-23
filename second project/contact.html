@@ -1,0 +1,110 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://use.fontawesome.com/d334648be6.js"></script>
+    <title>University webpage</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="2nd webpage.html"><img src="images/logo3.png" alt="logo" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="2nd webpage.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>CONTACT US </h1>
+        
+    </section>
+
+      <!-- ----------- contact page content ------------ -->
+
+      <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55540.67743728708!2d74.99538733892481!3d29.5369796597032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39114db0893d723d%3A0xc51125be998c4f95!2sSirsa%2C%20Haryana%20125055!5e0!3m2!1sen!2sin!4v1630552621804!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+      <section class="contact-us">
+          <div class="row">
+              <div class="contact-col">
+                  <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building </h5>
+                        <p>Sirsa, Haryana, IN</p>
+                    </span>
+                  </div>
+                  <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+1 0123456789 </h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                  </div>
+                  <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>info@gaganassociation.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                  </div>
+              </div>
+              <div class="contact-col">
+                    <form action="">
+                        <input type="text" placeholder="Enter your name" required >
+                        <input type="email" placeholder="Enter email address" required >
+                        <input type="text" placeholder="Enter your subject" required >
+                        <textarea  rows="8" placeholder="Message"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+
+              </div>
+          </div>
+      </section>
+
+    <!-- ---- footer ----- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit pariatur nisi recusandae numquam blanditiis ipsum neque. Error eius<br> deserunt enim et velit rem in! Dolore fugit sapiente harum aliquid?</p>
+        <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by Gagan's Association</p>
+
+    </section>
+
+  
+
+
+
+                <!-------- Javascript for toggle menu ------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
